@@ -1,10 +1,32 @@
 .feauturies-section {
   &__list {
-    display: flex;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
 
   &__item + &__item {
-    margin-left: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
   }
 
   &__title {
@@ -15,6 +37,10 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
 
   &__text {
@@ -26,8 +52,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
-    height: 120px;
+    // width: 270px;
+    // height: 120px;
     background-color: var(--additional-section-color);
     margin-bottom: 30px;
     border-radius: 4px;
