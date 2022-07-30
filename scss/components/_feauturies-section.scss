@@ -1,0 +1,40 @@
+.feauturies-section {
+  &__list {
+    display: flex;
+  }
+
+  &__item + &__item {
+    margin-left: 30px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--additional-section-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+
+  &__anim {
+    width: 70px;
+    height: 70px;
+  }
+}

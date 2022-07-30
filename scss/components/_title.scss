@@ -1,0 +1,13 @@
+.title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.team-section__title,
+.specifics-section__title,
+.clients-section__title {
+    margin-bottom: 50px
+}
