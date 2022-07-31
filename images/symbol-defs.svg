@@ -64,5 +64,8 @@
     <symbol id="icon-close-modal" viewBox="0 0 32 32">
       <path d="M32 3.2 28.8 0 16 12.8 3.2 0 0 3.2 12.8 16 0 28.8 3.2 32 16 19.2 28.8 32l3.2-3.2L19.2 16 32 3.2z"/>
     </symbol>
+    <symbol id="icon-menu-burger" viewBox="0 0 32 32">
+      <path d="M6.4 11.76v-2.16h19.2v2.16h-19.2zM6.4 17.040h19.2v-2.080h-19.2v2.080zM6.4 22.4h19.2v-2.16h-19.2v2.16z"></path>
+    </symbol>
   </defs>
 </svg>

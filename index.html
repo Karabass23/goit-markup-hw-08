@@ -74,6 +74,21 @@
             </a>
           </li>
         </ul>
+        <!-- <button class="header__menu-button" type="button">
+          <svg
+            class="header__icon-menu"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use href="./images/symbol-defs.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
+        <div class="menu-container">
+          <button class="menu-container__close-button" type="button">
+            <svg class="menu-container__icon-close" aria-label="Закрыть меню">
+              <use href="./images/symbol-defs.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+        </div> -->
       </div>
     </header>
 
@@ -195,9 +210,10 @@
           <ul class="team-section__list">
             <li class="team-section__avatar">
               <img
+                class="team-section__image"
                 src="./images/studio/igor.jpg"
                 alt="Фото Игоря"
-                width="270"
+                width="270px"
               />
               <div class="team-section__team-wrapper">
                 <h3 class="team-section__name">Игорь Демьяненко</h3>
@@ -266,9 +282,10 @@
             </li>
             <li class="team-section__avatar">
               <img
+                class="team-section__image"
                 src="./images/studio/olga.jpg"
                 alt="Фото Ольги"
-                width="270"
+                width="270px"
               />
               <div class="team-section__team-wrapper">
                 <h3 class="team-section__name">Ольга Репина</h3>
@@ -337,9 +354,10 @@
             </li>
             <li class="team-section__avatar">
               <img
+                class="team-section__image"
                 src="./images/studio/nikolay.jpg"
                 alt="Фото Николая"
-                width="270"
+                width="270px"
               />
               <div class="team-section__team-wrapper">
                 <h3 class="team-section__name">Николай Тарасов</h3>
@@ -408,9 +426,10 @@
             </li>
             <li class="team-section__avatar">
               <img
+                class="team-section__image"
                 src="./images/studio/michael.jpg"
                 alt="Фото Михаила"
-                width="270"
+                width="270px"
               />
               <div class="team-section__team-wrapper">
                 <h3 class="team-section__name">Михаил Ермаков</h3>
@@ -550,82 +569,84 @@
     <!-- Подвал сайта -->
     <footer class="footer">
       <div class="container footer__container">
-        <div>
-          <a href="./index.html" class="logo logo--secondary">
-            <span class="logo__web">Web</span>Studio</a
-          >
-          <address class="address">
-            <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul>
-              <li class="address__item">
-                <a href="mailto:info@example.com" class="address__link link"
-                  >info@example.com</a
+        <div class="footer__nav">
+          <div>
+            <a href="./index.html" class="logo logo--secondary">
+              <span class="logo__web">Web</span>Studio</a
+            >
+            <address class="address">
+              <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+              <ul>
+                <li class="address__item">
+                  <a href="mailto:info@example.com" class="address__link link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+380991111111" class="address__link link"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="cta">
+            <p class="cta__title">Присоединяйтесь</p>
+            <ul class="social-networks">
+              <li class="social-networks__item">
+                <a
+                  class="social-networks__link social-networks__link--in-footer"
+                  href="#"
                 >
+                  <svg
+                    class="social-networks__icon"
+                    aria-label="Перейти на сайт Инстаграм"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a href="tel:+380991111111" class="address__link link"
-                  >+38 099 111 11 11</a
+              <li class="social-networks__item">
+                <a
+                  class="social-networks__link social-networks__link--in-footer"
+                  href="#"
                 >
+                  <svg
+                    class="social-networks__icon"
+                    aria-label="Перейти на сайт Твиттер"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks__item">
+                <a
+                  class="social-networks__link social-networks__link--in-footer"
+                  href="#"
+                >
+                  <svg
+                    class="social-networks__icon"
+                    aria-label="Перейти на сайт Фейсбук"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks__item">
+                <a
+                  class="social-networks__link social-networks__link--in-footer"
+                  href="#"
+                >
+                  <svg
+                    class="social-networks__icon"
+                    aria-label="Перейти на сайт Линкедин"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="cta">
-          <p class="cta__title">Присоединяйтесь</p>
-          <ul class="social-networks">
-            <li class="social-networks__item">
-              <a
-                class="social-networks__link social-networks__link--in-footer"
-                href="#"
-              >
-                <svg
-                  class="social-networks__icon"
-                  aria-label="Перейти на сайт Инстаграм"
-                >
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-networks__item">
-              <a
-                class="social-networks__link social-networks__link--in-footer"
-                href="#"
-              >
-                <svg
-                  class="social-networks__icon"
-                  aria-label="Перейти на сайт Твиттер"
-                >
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-networks__item">
-              <a
-                class="social-networks__link social-networks__link--in-footer"
-                href="#"
-              >
-                <svg
-                  class="social-networks__icon"
-                  aria-label="Перейти на сайт Фейсбук"
-                >
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-networks__item">
-              <a
-                class="social-networks__link social-networks__link--in-footer"
-                href="#"
-              >
-                <svg
-                  class="social-networks__icon"
-                  aria-label="Перейти на сайт Линкедин"
-                >
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div>
           <form name="subscribe-form" autocomplete="off">

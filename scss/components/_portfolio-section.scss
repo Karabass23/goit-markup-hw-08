@@ -1,6 +1,10 @@
 .menu {
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
   margin-bottom: 50px;
   gap: 8px;
 
@@ -44,6 +48,20 @@
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+  }
+
   &__title {
     margin-bottom: 4px;
 
@@ -60,6 +78,7 @@
   }
 
   &__box {
+    flex-grow: 1;
     padding: 20px 24px;
     border-bottom: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
