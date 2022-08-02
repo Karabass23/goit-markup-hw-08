@@ -23,8 +23,10 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    max-width: 696px;
-
+    max-width: 360px;
+    @media screen and (min-width: 1200px) {
+      width: 696px;
+    }
     color: var(--primary-section-color);
     font-weight: 900;
     font-size: 26px;
