@@ -99,23 +99,21 @@
   margin-left: auto;
 
   @media screen and (min-width: 768px) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
-  }
-
-  &__item + &__item {
-    @media screen and (min-width: 1200px) {
-      margin-left: 50px;
-    }
+    flex-direction: row;
+    gap: 50px;
   }
 
   &__link {
     display: flex;
     align-items: center;
-    padding-bottom: 10px;
+    color: var(--primary-text-color);
 
     @media screen and (min-width: 1200px) {
       padding-top: 32px;

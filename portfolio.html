@@ -75,7 +75,7 @@
         <button
           class="header__menu-button"
           type="button"
-          aria-expendent="false"
+          aria-expanded="false"
           aria-controls="mobile-menu"
           data-menu-button
         >
@@ -90,7 +90,7 @@
             ></use>
           </svg>
         </button>
-        <div class="mobile-menu" data-menu>
+        <div class="mobile-menu" id="mobile-menu" data-menu>
           <ul class="mobile-site-nav">
             <li class="mobile-site-nav__item">
               <a class="mobile-site-nav__link" href="./index.html"> Студія</a>
@@ -165,13 +165,34 @@
           <ul class="portfolio__list">
             <li class="card">
               <div class="card__thumb">
-                <img
-                  class="card__image"
-                  srcset="./images/portfolio/technokryak@2x.jpg 2x"
-                  src="./images/portfolio/technokryak.jpg"
-                  alt="Веб-сайт"
-                  width="370px"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/technokryak_mobile.jpg    1x,
+                      ./images/portfolio/technokryak_mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/technokryak_tablet.jpg    1x,
+                      ./images/portfolio/technokryak_tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/technokryak.jpg    1x,
+                      ./images/portfolio/technokryak@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="card__image"
+                    src="./images/portfolio/technokryak.jpg"
+                    alt="Веб-сайт"
+                  />
+                </picture>
                 <div class="card__description">
                   <p class="card__description-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -187,13 +208,34 @@
             </li>
             <li class="card">
               <div class="card__thumb">
-                <img
-                  class="card__image"
-                  srcset="./images/portfolio/neworlean@2x.jpg 2x"
-                  src="./images/portfolio/neworlean.jpg"
-                  alt="Постер"
-                  width="370px"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/neworlean_mobile.jpg    1x,
+                      ./images/portfolio/neworlean_mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/neworlean_tablet.jpg    1x,
+                      ./images/portfolio/neworlean_tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/neworlean.jpg    1x,
+                      ./images/portfolio/neworlean@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="card__image"
+                    src="./images/portfolio/neworlean.jpg"
+                    alt="Постер"
+                  />
+                </picture>
                 <div class="card__description">
                   <p class="card__description-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -209,13 +251,34 @@
             </li>
             <li class="card">
               <div class="card__thumb">
-                <img
-                  class="card__image"
-                  srcset="./images/portfolio/seafood@2x.jpg 2x"
-                  src="./images/portfolio/seafood.jpg"
-                  alt="Логотип ресторану"
-                  width="370px"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/seafood_mobile.jpg    1x,
+                      ./images/portfolio/seafood_mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/seafood_tablet.jpg    1x,
+                      ./images/portfolio/seafood_tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/seafood.jpg    1x,
+                      ./images/portfolio/seafood@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="card__image"
+                    src="./images/portfolio/seafood.jpg"
+                    alt="Логотип ресторану"
+                  />
+                </picture>
                 <div class="card__description">
                   <p class="card__description-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -231,13 +294,34 @@
             </li>
             <li class="card">
               <div class="card__thumb">
-                <img
-                  class="card__image"
-                  srcset="./images/portfolio/prime@2x.jpg 2x"
-                  src="./images/portfolio/prime.jpg"
-                  alt="Навушники"
-                  width="370px"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/prime_mobile.jpg    1x,
+                      ./images/portfolio/prime_mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/prime_tablet.jpg    1x,
+                      ./images/portfolio/prime_tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/prime.jpg    1x,
+                      ./images/portfolio/prime@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="card__image"
+                    src="./images/portfolio/prime.jpg"
+                    alt="Навушники"
+                  />
+                </picture>
                 <div class="card__description">
                   <p class="card__description-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -253,13 +337,34 @@
             </li>
             <li class="card">
               <div class="card__thumb">
-                <img
-                  class="card__image"
-                  srcset="./images/portfolio/boxes@2x.jpg 2x"
-                  src="./images/portfolio/boxes.jpg"
-                  alt="Коробки"
-                  width="370px"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/boxes_mobile.jpg    1x,
+                      ./images/portfolio/boxes_mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/boxes_tablet.jpg    1x,
+                      ./images/portfolio/boxes_tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/boxes.jpg    1x,
+                      ./images/portfolio/boxes@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="card__image"
+                    src="./images/portfolio/boxes.jpg"
+                    alt="Коробки"
+                  />
+                </picture>
                 <div class="card__description">
                   <p class="card__description-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -275,13 +380,34 @@
             </li>
             <li class="card">
               <div class="card__thumb">
-                <img
-                  class="card__image"
-                  srcset="./images/portfolio/inspiration@2x.jpg 2x"
-                  src="./images/portfolio/inspiration.jpg"
-                  alt="Монітор"
-                  width="370px"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/inspiration_mobile.jpg    1x,
+                      ./images/portfolio/inspiration_mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/inspiration_tablet.jpg    1x,
+                      ./images/portfolio/inspiration_tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/inspiration.jpg    1x,
+                      ./images/portfolio/inspiration@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="card__image"
+                    src="./images/portfolio/inspiration.jpg"
+                    alt="Монітор"
+                  />
+                </picture>
                 <div class="card__description">
                   <p class="card__description-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -297,13 +423,34 @@
             </li>
             <li class="card">
               <div class="card__thumb">
-                <img
-                  class="card__image"
-                  srcset="./images/portfolio/limited-edition@2x.jpg 2x"
-                  src="./images/portfolio/limited-edition.jpg"
-                  alt="Журнал"
-                  width="370px"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/limited-edition_mobile.jpg    1x,
+                      ./images/portfolio/limited-edition_mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/limited-edition_tablet.jpg    1x,
+                      ./images/portfolio/limited-edition_tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/limited-edition.jpg    1x,
+                      ./images/portfolio/limited-edition@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="card__image"
+                    src="./images/portfolio/limited-edition.jpg"
+                    alt="Журнал"
+                  />
+                </picture>
                 <div class="card__description">
                   <p class="card__description-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -319,13 +466,34 @@
             </li>
             <li class="card">
               <div class="card__thumb">
-                <img
-                  class="card__image"
-                  srcset="./images/portfolio/lab@2x.jpg 2x"
-                  src="./images/portfolio/lab.jpg"
-                  alt="Бірка"
-                  width="370px"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/lab_mobile.jpg    1x,
+                      ./images/portfolio/lab_mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/lab_tablet.jpg    1x,
+                      ./images/portfolio/lab_tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/lab.jpg    1x,
+                      ./images/portfolio/lab@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="card__image"
+                    src="./images/portfolio/lab.jpg"
+                    alt="Бірка"
+                  />
+                </picture>
                 <div class="card__description">
                   <p class="card__description-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -341,13 +509,34 @@
             </li>
             <li class="card">
               <div class="card__thumb">
-                <img
-                  class="card__image"
-                  srcset="./images/portfolio/groving@2x.jpg 2x"
-                  src="./images/portfolio/groving.jpg"
-                  alt="Ноутбук"
-                  width="370px"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/growing_mobile.jpg    1x,
+                      ./images/portfolio/growing_mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/growing_tablet.jpg    1x,
+                      ./images/portfolio/growing_tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/growing.jpg    1x,
+                      ./images/portfolio/growing@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="card__image"
+                    src="./images/portfolio/growing.jpg"
+                    alt="Ноутбук"
+                  />
+                </picture>
                 <div class="card__description">
                   <p class="card__description-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем

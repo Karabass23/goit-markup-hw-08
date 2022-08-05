@@ -77,7 +77,7 @@
         <button
           class="header__menu-button"
           type="button"
-          aria-expendent="false"
+          aria-expanded="false"
           aria-controls="mobile-menu"
           data-menu-button
         >
@@ -260,13 +260,34 @@
           <h2 class="team-section__title title">Наша команда</h2>
           <ul class="team-section__list">
             <li class="team-section__avatar">
-              <img
-                class="team-section__image"
-                srcset="./images/studio/igor@2x.jpg 2x"
-                src="./images/studio/igor.jpg"
-                alt="Фото Ігоря"
-                width="270px"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/igor_mobile.jpg    1x,
+                    ./images/studio/igor_mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/igor_tablet.jpg    1x,
+                    ./images/studio/igor_tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/igor.jpg    1x,
+                    ./images/studio/igor@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="team-section__image"
+                  src="./images/studio/igor.jpg"
+                  alt="Фото Ігоря"
+                />
+              </picture>
               <div class="team-section__team-wrapper">
                 <h3 class="team-section__name">Ігор Демьяненко</h3>
                 <p class="team-section__job">Product Designer</p>
@@ -327,13 +348,34 @@
               </div>
             </li>
             <li class="team-section__avatar">
-              <img
-                class="team-section__image"
-                srcset="./images/studio/olga@2x.jpg 2x"
-                src="./images/studio/olga.jpg"
-                alt="Фото Ольги"
-                width="270px"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/olga_mobile.jpg    1x,
+                    ./images/studio/olga_mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/olga_tablet.jpg    1x,
+                    ./images/studio/olga_tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/olga.jpg    1x,
+                    ./images/studio/olga@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="team-section__image"
+                  src="./images/studio/olga.jpg"
+                  alt="Фото Ольги"
+                />
+              </picture>
               <div class="team-section__team-wrapper">
                 <h3 class="team-section__name">Ольга Репіна</h3>
                 <p class="team-section__job">Frontend Developer</p>
@@ -394,13 +436,34 @@
               </div>
             </li>
             <li class="team-section__avatar">
-              <img
-                class="team-section__image"
-                srcset="./images/studio/nikolay@2x.jpg 2x"
-                src="./images/studio/nikolay.jpg"
-                alt="Фото Миколи"
-                width="270px"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/nikolay_mobile.jpg    1x,
+                    ./images/studio/nikolay_mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/nikolay_tablet.jpg    1x,
+                    ./images/studio/nikolay_tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/nikolay.jpg    1x,
+                    ./images/studio/nikolay@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="team-section__image"
+                  src="./images/studio/nikolay.jpg"
+                  alt="Фото Миколи"
+                />
+              </picture>
               <div class="team-section__team-wrapper">
                 <h3 class="team-section__name">Микола Тарасов</h3>
                 <p class="team-section__job">Marketing</p>
@@ -461,13 +524,34 @@
               </div>
             </li>
             <li class="team-section__avatar">
-              <img
-                class="team-section__image"
-                srcset="./images/studio/michael@2x.jpg 2x"
-                src="./images/studio/michael.jpg"
-                alt="Фото Михайла"
-                width="270px"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/michael_mobile.jpg    1x,
+                    ./images/studio/michael_mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/michael_tablet.jpg    1x,
+                    ./images/studio/michael_tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/michael.jpg    1x,
+                    ./images/studio/michael@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="team-section__image"
+                  src="./images/studio/michael.jpg"
+                  alt="Фото Михайла"
+                />
+              </picture>
               <div class="team-section__team-wrapper">
                 <h3 class="team-section__name">Михайло Єрмаков</h3>
                 <p class="team-section__job">UI Designer</p>

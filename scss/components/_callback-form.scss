@@ -72,25 +72,35 @@
 }
 
 .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &__text {
-    padding-left: 24px;
-    position: relative;
-    font-size: 14px;
-    line-height: 1.7;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 5px;
+    font-size: 12px;
+    line-height: 1.17;
     color: var(--primary-text-color);
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.7;
+    }
   }
 
   &__link {
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.17;
     color: var(--visual-text-color);
     text-decoration: underline;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.7;
+    }
   }
 
   &__icon {
-    top: 0;
-    left: 0;
-    position: absolute;
     width: 16px;
     height: 15px;
 

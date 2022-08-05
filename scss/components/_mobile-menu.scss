@@ -1,10 +1,10 @@
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
-  min-height: 796px;
+  width: 100vw;
+  height: 100vh;
   padding: 48px 40px;
   top: 0;
   left: 0;
